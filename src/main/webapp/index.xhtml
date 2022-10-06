@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Primeira pagina</title>
+</h:head>
+<h:body>
+	<h1>Prime Faces Pagina inicial</h1>
+	<h:form>
+		<h:panelGrid columns="2">			
+				<h:outputText value="Nome"/>
+					<h:inputText/>
+				<h:outputText value="Botão"/>
+					<h:commandButton value="Enviar"/>				
+				<h:outputText value="Senha"/>
+					<h:inputSecret/>				
+				<h:outputText value="checkBox-backend"/>
+				<h:selectManyCheckbox>
+					<f:selectItem itemLabel="Java 8" itemValue="version"/>
+					<f:selectItem itemLabel="Java 9" itemValue="version"/>
+				</h:selectManyCheckbox>				
+				<h:outputText value="combobox-frontend"/>
+				<h:selectOneMenu>
+					<f:selectItem itemLabel="JSF" itemValue="version"/>
+					<f:selectItem itemLabel="Angular" itemValue="version"/>
+				</h:selectOneMenu>		
+				<h:outputText value="combobox-frontend"/>
+				<h:selectOneRadio value="radiobox-banco dados">
+					<f:selectItem itemLabel="MariaDB" itemValue="version"/>
+					<f:selectItem itemLabel="Postgresql" itemValue="version"/>
+				</h:selectOneRadio>				
+				<h:outputText value="textarea-descricao"/>
+				<h:inputTextarea/>	
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>
